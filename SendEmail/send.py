@@ -44,4 +44,4 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     except Exception as e:
         logging.error("Error sending email:", str(e))
-        return func.HttpResponse("Error sending email", status_code=500)
+        return func.HttpResponse("Error sending email", status_code=502)
