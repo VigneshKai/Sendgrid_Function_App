@@ -12,6 +12,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         employee_name = req_body.get('employee_name')
         employee_email = req_body.get('employee_email')
         sending_email = req_body.get('sending_email')
+        password = req_body.get('Password')
 
         # Retrieve the template ID and from_email from environment variables
         template_id = os.environ.get('SENDGRID_TEMPLATE_ID')
